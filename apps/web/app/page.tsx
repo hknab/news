@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@repo/ui";
+import { Button, Typography } from "@repo/ui";
 import { useThemes } from "@repo/ui/lib";
 
 export default function Page() {
@@ -13,6 +13,7 @@ export default function Page() {
       <Button variant="outline" onClick={toggleTheme}>
         {theme}
       </Button>
+      <Typography variant="h1">Hello World</Typography>
     </main>
   );
 }
