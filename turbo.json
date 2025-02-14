@@ -1,14 +1,16 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "ui": "stream",
+  "globalEnv": ["NEWS_API_API_KEY"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**", "./dist/**"],
+      "env": ["NEWS_API_API_KEY"]
     },
     "lint": { "dependsOn": ["^lint"] },
     "check-types": { "dependsOn": ["^check-types"] },
-    "dev": { "cache": false, "persistent": true }
+    "dev": { "cache": false, "persistent": true, "env": ["NEWS_API_API_KEY"] }
   }
 }

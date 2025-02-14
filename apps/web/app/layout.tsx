@@ -1,3 +1,4 @@
+import { Header } from "@/components";
 import { ThemeProvider } from "@repo/ui/lib";
 import "@repo/ui/styles.css";
 import type { Metadata } from "next";
@@ -25,7 +26,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="min-h-screen bg-background font-sans antialiased">
+            <Header />
+            <main className="container mx-auto px-4 py-8">{children}</main>
+          </div>
         </ThemeProvider>
       </body>
     </html>

@@ -3,22 +3,22 @@ import * as React from "react";
 
 import { cn } from "@repo/ui/lib";
 
-const typographyVariants = cva("ui-text-foreground", {
+const typographyVariants = cva("text-foreground", {
   variants: {
     variant: {
-      h1: "ui-scroll-m-20 ui-text-4xl ui-font-extrabold ui-tracking-tight lg:ui-text-5xl",
-      h2: "ui-scroll-m-20 ui-border-b ui-pb-2 ui-text-3xl ui-font-semibold ui-tracking-tight ui-transition-colors first:ui-mt-0",
-      h3: "ui-scroll-m-20 ui-text-2xl ui-font-semibold ui-tracking-tight",
-      h4: "ui-scroll-m-20 ui-text-xl ui-font-semibold ui-tracking-tight",
-      p: "ui-leading-7 [&:not(:first-child)]:ui-mt-6",
-      blockquote: "ui-mt-6 ui-border-l-2 ui-pl-6 ui-italic",
-      ul: "ui-my-6 ui-ml-6 ui-list-disc [&>li]:ui-mt-2",
+      h1: "scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl",
+      h2: "scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0",
+      h3: "scroll-m-20 text-2xl font-semibold tracking-tight",
+      h4: "scroll-m-20 text-xl font-semibold tracking-tight",
+      p: "leading-7 [&:not(:first-child)]:mt-6",
+      blockquote: "mt-6 border-l-2 pl-6 italic",
+      ul: "my-6 ml-6 list-disc [&>li]:mt-2",
       inlineCode:
-        "ui-relative ui-rounded ui-bg-muted ui-px-[0.3rem] ui-py-[0.2rem] ui-font-mono ui-text-sm ui-font-semibold",
-      lead: "ui-text-xl ui-text-muted-foreground",
-      large: "ui-text-lg ui-font-semibold",
-      small: "ui-text-sm ui-font-medium ui-leading-none",
-      muted: "ui-text-sm ui-text-muted-foreground",
+        "relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold",
+      lead: "text-xl text-muted-foreground",
+      large: "text-lg font-semibold",
+      small: "text-sm font-medium leading-none",
+      muted: "text-sm text-muted-foreground",
     },
   },
   defaultVariants: { variant: "p" },
